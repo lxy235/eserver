@@ -1,3 +1,4 @@
+<?php
 /**
   * socket client
   * a NULL填充字符串
@@ -7,7 +8,7 @@
 function insert_queue($cmd, $sql) {
     $s = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
     try {
-      socket_connect($s, "127.0.0.1", 8888);
+      socket_connect($s, "127.0.0.1", 8989);
       $list = json_encode(array(
         "sql"=>$sql
       ));
@@ -34,3 +35,4 @@ function insert_queue($cmd, $sql) {
     }
 }
 $temp = insert_queue(8001, "insert into (num) values (%d)");
+var_dump($temp);

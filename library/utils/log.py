@@ -7,8 +7,8 @@
 
 import logging, os, types
 import datetime, math
-from Const import *
-from Config import Config
+from eserver.common.const import *
+from eserver.library.config import Config
 
 class Log():
 
@@ -28,7 +28,7 @@ class Log():
     def __init__(self):
         #获取当前目录
         _cur_path = os.path.normpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
-        _log_path = _cur_path+"/../../../App/Data/Log"
+        _log_path = _cur_path+"/../../app/logs"
         if not os.path.isdir(_log_path):
             os.makedirs(_log_path)
         #创建解析器

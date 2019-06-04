@@ -5,8 +5,8 @@
 # @Time: 2014-06-06
 # @Info: 循环队列
 
-import Log
-from Config import Config
+import eserver.library.log as Log
+from eserver.library.config import Config
 
 class CircularQueue():
 

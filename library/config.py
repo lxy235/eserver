@@ -5,7 +5,6 @@
 # @Time: 2013-10-17
 # @Info: Config.
 
-import sys
 from eserver.library.configs.parseConfig import ParseConfig
 
 

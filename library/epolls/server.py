@@ -5,8 +5,9 @@
 # @Time: 2013-10-17
 # @Info: Server Library.
 
-import socket, select, time, Log
-from Epolls.SocketParser import SocketParser
+import socket, select, time
+import eserver.library.log as Log
+from eserver.library.epolls.socketParser import SocketParser
 
 class Server():
     

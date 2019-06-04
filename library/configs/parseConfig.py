@@ -22,7 +22,7 @@ class ParseConfig():
         cur_path  = os.path.normpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
         config_path = cur_path+"/../../config/"+self.__config_file
         if app_name != "":
-            config_path = cur_path+"/../../../App/"+app_name+"/config/"+self.__config_file
+            config_path = cur_path+"/../../app/"+app_name+"/config/"+self.__config_file
         #设置配置文件
         self.parser(config_path)
         

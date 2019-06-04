@@ -6,7 +6,7 @@
 # @Info: Epoll SocketParser.
 
 import socket, struct, json
-import Log
+import eserver.library.log as Log
 
 class SocketParser():
     
